@@ -1,6 +1,11 @@
 <h1>All Classrooms</h1>
 <ul>
   <%= @classrooms.each do |cr| %>
-    <li><%= cr.course_name %></li>
+    <li>
+      <%= cr.course_name %>
+      <ul>
+        <li><%= cr.semester %></li>
+      </ul>
+    </li>
   <% end %>
 </ul>
