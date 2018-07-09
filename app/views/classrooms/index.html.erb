@@ -1,2 +1,6 @@
 <h1>All Classrooms</h1>
-<%= @classrooms
+<ul>
+  <%= @classrooms.each do |cr| %>
+    <li><%= %></li>
+  <% end %>
+</ul>
