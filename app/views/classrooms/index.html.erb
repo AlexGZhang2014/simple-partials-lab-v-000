@@ -2,7 +2,7 @@
 <ul>
   <% @classrooms.each do |cr| %>
     <li>
-      <%= cr.course_name %>
+      <%= link_to cr.course_name, classroom_path(cr) %>
       <ul>
         <li><%= cr.semester %></li>
       </ul>
